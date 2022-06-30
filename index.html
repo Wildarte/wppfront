@@ -14,11 +14,11 @@
 
         <div class="board_left">
 
-            <header class="top_board b-1">
+            <header class="top_board">
 
-                <div class="f-33 item_top_board">
-                    <span>
-                        <i class="bi bi-arrow-left-circle-fill"></i>
+                <div class="icons_menu f-25 item_top_board">
+                    <span id="open_menu">
+                        <i class="bi bi-arrow-right-circle-fill"></i>
                     </span>
                     <span>
                         <i class="bi bi-phone"></i>
@@ -28,11 +28,11 @@
                     </span>
                 </div>
 
-                <div class="f-33 item_top_board t-center">
-                    <h2>Simple Chat</h2>
+                <div class="title_main f-50 item_top_board t-center d-flex">
+                    <h2 class="d-flex align-center">Simple Chat <span class="light_status bg-green"></span></h2>
                 </div>
 
-                <div class="f-33 item_top_board t-right">
+                <div class="f-25 item_top_board t-right">
                     <span>
                         <i class="bi bi-clock-fill"></i>
                     </span>
@@ -43,170 +43,212 @@
 
             </header>
 
-            <div class="content_board_left b-1">
+            <div class="content_board_left">
 
-                <div class="menu_chat p-10">
+                <div class="menu_chat">
+                    <div class="menu_chat_content">
 
-                    <ul class="list_menu_chat">
-                        <li>
-                            <a href="#"><i class="bi bi-chat"></i> Chat</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="bi bi-person"></i> Contacts</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="bi bi-people"></i> Groups</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="bi bi-reception-4"></i> Reports</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="bi bi-gear"></i> Settings</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="bi bi-box-arrow-right"></i> Disconnect device</a>
-                        </li>
-                    </ul>
+                        <div class="top_menu_mobile p-10">
+                            <span id="close_menu_mobile"><i class="bi bi-x-lg"></i></span>
+                        </div>
+    
+                        <ul class="list_menu_chat">
+                            <li class="active_item">
+                                <a href="#"><i class="bi bi-chat"></i> Chat</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="bi bi-person"></i> Contacts</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="bi bi-people"></i> Groups</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="bi bi-reception-4"></i> Reports</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="bi bi-gear"></i> Settings</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="bi bi-box-arrow-right"></i> Disconnect device</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    
+
+                    <div class="bottom_menu_chat">
+                        <div class="show_status d-flex just-space-between p-10">
+                            <div class="d-flex">
+                                <span class="light_status bg-green"></span> Online
+                            </div>
+
+                            <span class="color-light-green" id="btn_change_status">
+                                Change
+                            </span>
+                        </div>
+                        <div class="contact_single_status">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Session 1</h4>
+                                <p class="status_session">Active Session</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <button class="logout_session">
+                                Logout
+                            </button>
+                        </div>
+                    </div>
 
                 </div>
 
-                <div class="list_contact p-10">
+                <div class="list_contact">
 
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                    <div class="search_contacts d-flex">
+                        <i class="bi bi-search"></i>
+                        <input type="search" name="" id="" placeholder="Buscar Contato">
+                    </div>
+
+                    <div class="list_contact_content">
+                        <div class="contact_single active_chat">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
+                        </div>
+    
+                        <div class="contact_single">
+                            <img src="assets/img/user.png" alt="">
+                            <div class="contact_single_info">
+                                <h4>Name</h4>
+                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
-
-                    <div class="contact_single">
-                        <img src="" alt="">
-                        <div class="contact_single_info">
-                            <h4>Name</h4>
-                            <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
-                        </div>
-                    </div>
+                    
 
                 </div>
 
@@ -216,23 +258,53 @@
 
         <div class="board_right">
 
-            <header class="top_board">
-                <div>
-                    <img src="" alt="">
-                    <div>
-                        <h3>Name</h3>
+            <header class="top_board d-flex just-space-between">
+                <div class="photo_chat">
+                    <span class="return_contacts">
+                        <i class="bi bi-arrow-left-short"></i>
+                    </span>
+                    <img src="assets/img/user.png" alt="">
+                    <div class="contact_single_info">
+                        <h4>Name</h4>
+                        <p class="last_msg_user"></p>
                     </div>
                 </div>
 
-                <div>
-                    icons
+                <div class="icons_chat_active p-10">
+                    <span><i class="bi bi-list-ul"></i></span>
+                    <span><i class="bi bi-asterisk"></i></span>
+                    <span><i class="bi bi-tags-fill"></i></span>
+                    <span><i class="bi bi-person-fill"></i></span>
+                    <span><i class="bi bi-sliders"></i></span>
+                    <span><i class="bi bi-chat-fill"></i></span>
+                    <span><i class="bi bi-printer-fill"></i></span>
+                    <span><i class="bi bi-x-lg"></i></span>
                 </div>
             </header>
 
             <div class="board_chat">
 
-                <div>
+                <div class="content_msg p-10">
 
+                    <div class="content_msg_receive">
+                        
+                    </div>
+
+                </div>
+
+                <div class="send_msg_board">
+                    <div class="content_input_msg">
+                        <div class="icons_input_msg">
+                            <span><i class="bi bi-paperclip"></i></span>
+                            <span><i class="bi bi-emoji-smile"></i></span>
+                        </div>
+                        <div class="input_msg_field">
+                            <textarea name="" id="input_msg" cols="" rows="1" placeholder="Digite a mensagem..." wrap="soft"></textarea>
+                        </div>
+                        <button class="btn_send_msg" id="btn_send_msg" onclick="sendMsg()">
+                            <i class="bi bi-send"></i>
+                        </button>
+                    </div>
                 </div>
 
             </div>
@@ -240,6 +312,8 @@
         </div>
 
     </div>
+
+    <script src="assets/js/script.js"></script>
     
 </body>
 </html>
