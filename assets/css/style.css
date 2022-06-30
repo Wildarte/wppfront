@@ -1,0 +1,83 @@
+:root{
+    --color-main: #222222;
+    --color-second: #41525D;
+    --color-light-gray: #bbbbbb;
+}
+
+/* general style */
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.just-space-between{
+    justify-content: space-between;
+}
+.f-33{
+    flex-basis: 33.33%;
+}
+.t-center{
+    text-align: center;
+}
+.t-left{
+    text-align: left;
+}
+.t-right{
+    text-align: right;
+}
+.p-10{
+    padding: 10px;
+}
+.p-5{
+    padding: 5px;
+}
+.b-1{
+    border: 1px solid;
+}
+/* general style */
+
+.full_board{
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid;
+    display: flex;
+}
+
+.board_left{
+    flex-basis: 35%;
+    border: 1px solid;
+}
+
+.top_board{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.item_top_board{
+    padding: 0 10px;
+}
+.item_top_board span{
+    margin: 0 5px;
+}
+.content_board_left{
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+}
+.menu_chat, .list_contact{
+    flex-basis: 50%;
+    overflow: auto;
+}
+.menu_chat{
+    height: 100%;
+    border-right: 1px solid var(--color-light-gray);
+}
+.list_menu_chat{
+}
+.list_menu_chat li{
+    line-height: 2em;
+}
+.list_menu_chat li a{
+    color: var(--color-main);
+    font-size: 1.2em;
+}
