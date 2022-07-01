@@ -20,6 +20,9 @@
                     <span id="open_menu">
                         <i class="bi bi-arrow-right-circle-fill"></i>
                     </span>
+                    <span class="reto" id="open_menu_desktop">
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                    </span>
                     <span>
                         <i class="bi bi-phone"></i>
                     </span>
@@ -107,143 +110,536 @@
 
                     <div class="search_contacts d-flex">
                         <i class="bi bi-search"></i>
-                        <input type="search" name="" id="" placeholder="Buscar Contato">
+                        <input type="search" name="" id="search_users" placeholder="Buscar Contato" onkeyup="searchUser()">
                     </div>
 
                     <div class="list_contact_content">
                         <div class="contact_single active_chat">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <img src="https://cdn.pixabay.com/photo/2018/01/06/09/25/hijab-3064633_960_720.jpg" alt="">
+                                </div>
+                                
+                                <div class="contact_single_info">
+                                    <h4>Amanda Gonçalves</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                            
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="contact_single">
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <div class="thumbname"></div>
+                                </div>
+                                
+                                <div class="contact_single_info">
+                                    <h4>John Doe</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
     
                         <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <img src="assets/img/user.png" alt="">
+                                </div>
+                                <div class="contact_single_info">
+                                    <h4>Thomy Shelby</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
     
                         <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <div class="thumbname"></div>
+                                </div>
+                                <div class="contact_single_info">
+                                    <h4>Goku</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
     
                         <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <img src="https://cdn.pixabay.com/photo/2018/03/06/22/57/portrait-3204843_960_720.jpg" alt="">
+                                </div>
+                                <div class="contact_single_info">
+                                    <h4>Naruto Usumaki</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
     
                         <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <div class="thumbname"></div>
+                                </div>
+                                <div class="contact_single_info">
+                                    <h4>Fulano de Tal</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
     
                         <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <div class="thumbname"></div>
+                                </div>
+                                <div class="contact_single_info">
+                                    <h4>Leonardo Dicaprio</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
     
                         <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <img src="https://cdn.pixabay.com/photo/2017/02/16/23/10/smile-2072907_960_720.jpg" alt="">
+                                </div>
+                                <div class="contact_single_info">
+                                    <h4>Joana Soares Dias</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+    
+                            </div>
+                            
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
     
                         <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <div class="thumbname"></div>
+                                </div>
+                                <div class="contact_single_info">
+                                    <h4>Givaldo Mendonça</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
     
                         <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <d class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <div class="thumbname"></div>
+                                </div>
+                                <div class="contact_single_info">
+                                    <h4>Jefersonh Rodrigues</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </d>
+                            
+
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
     
                         <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <img src="https://cdn.pixabay.com/photo/2018/04/05/09/32/portrait-3292287_960_720.jpg" alt="">
+                                </div>
+                                <div class="contact_single_info">
+                                    <h4>Romenia</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                           
+
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
     
                         <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <img src="assets/img/user.png" alt="">
+                                </div>
+                                <div class="contact_single_info">
+                                    <h4>Charlie</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+    
+                            </div>
+                            
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
     
                         <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <img src="assets/img/user.png" alt="">
+                                </div>
+                                <div class="contact_single_info">
+                                    <h4>Name</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
     
                         <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <img src="assets/img/user.png" alt="">
+                                </div>
+                                <div class="contact_single_info">
+                                    <h4>Roberto</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                            
+
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
     
                         <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <img src="assets/img/user.png" alt="">
+                                </div>
+                                <div class="contact_single_info">
+                                    <h4>Carlos Garcia</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                           
+
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
     
                         <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <div class="thumbname"></div>
+                                </div>
+                                <div class="contact_single_info">
+                                    <h4>Janones</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
+                            </div>
+                           
+
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
     
                         <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            <div class="d-flex">
+                                <div class="thumb_single_contact">
+                                    <div class="thumbname"></div>
+                                </div>
+                                <div class="contact_single_info">
+                                    <h4>Ribeirão Preto</h4>
+                                    <p class="number">+55(11) 928373905</p>
+                                    <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                                </div>
                             </div>
-                        </div>
-    
-                        <div class="contact_single">
-                            <img src="assets/img/user.png" alt="">
-                            <div class="contact_single_info">
-                                <h4>Name</h4>
-                                <p class="last_msg_user">Lorem ipsum dolor sit amet</p>
+                            
+
+                            <div class="push">
+                                <div class="push_row d-flex">
+                                    <span class="push_new label-red">
+                                        7h32
+                                    </span>
+                                </div>
+                                
+                                <div class="push_row d-flex">
+                                    <div class="user_type">
+                                        <span>Roberto</span> - Atendente
+                                    </div>
+                                    <span class="push_new_green label-greeb">
+                                        11
+                                    </span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -257,19 +653,25 @@
         </div>
 
         <div class="board_right">
+            <div class="open_over"></div>
 
             <header class="top_board d-flex just-space-between">
                 <div class="photo_chat">
                     <span class="return_contacts">
                         <i class="bi bi-arrow-left-short"></i>
                     </span>
-                    <img src="assets/img/user.png" alt="">
+                    <div class="thumb_contact">
+                        <img src="assets/img/user.png" alt="">
+                    </div>
+                    
                     <div class="contact_single_info">
                         <h4>Name</h4>
                         <p class="last_msg_user"></p>
                     </div>
                 </div>
-
+                <span id="open_menu_icon_chat">
+                    <i class="bi bi-three-dots-vertical"></i>
+                </span>
                 <div class="icons_chat_active p-10">
                     <span><i class="bi bi-list-ul"></i></span>
                     <span><i class="bi bi-asterisk"></i></span>
